@@ -1,0 +1,112 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Lab1",
+			"request": "launch",
+			"mainClass": "unit3.Lab1",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Day2",
+			"request": "launch",
+			"mainClass": "unit3.Day2",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Example",
+			"request": "launch",
+			"mainClass": "robotics.Example",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch) - Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-FunMath<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit1.FunMath",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-InputPractice<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit1.InputPractice",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-JOptionPaneInput<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit1.JOptionPaneInput",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Lab1Output<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit1.Lab1Output",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-ScannerInput<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit1.ScannerInput",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Day4<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit2.Day4",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-IfElseDay1<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit2.IfElseDay1",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-IfElseDay2<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit2.IfElseDay2",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Lab1<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit2.Lab1",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Lab2<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit2.Lab2",
+			"projectName": "Java Practice"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Lab3<Java Practice>",
+			"request": "launch",
+			"mainClass": "unit2.Lab3",
+			"projectName": "Java Practice"
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Debug (Launch) - Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Lab3",
+			"request": "launch",
+			"mainClass": "unit3.Lab3"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-CircleTest",
+			"request": "launch",
+			"mainClass": "unit4.lab3.CircleTest"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-CylinderTest",
+			"request": "launch",
+			"mainClass": "unit4.lab3.CylinderTest"
+		}
+	]
+}
