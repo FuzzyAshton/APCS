@@ -1,7 +1,9 @@
-package fallProject;
-import java.util.ArrayList;
+package finalProject;
 
-import fallProject.DNA.DNAType;
+import java.util.ArrayList;
+import java.util.Collections;
+
+import finalProject.DNA.DNAType;
 
 public class Earth {
 	private ArrayList<Organism> organisms;
@@ -15,6 +17,8 @@ public class Earth {
 		for (int i = 0; i < 100; i++) {
 			organisms.add(new Organism());
 		}
+		// #24 Mergesort
+		Collections.sort(organisms);
 	}
 
 	public Earth(ArrayList<Organism> organisms) {

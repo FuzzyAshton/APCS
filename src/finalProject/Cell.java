@@ -1,4 +1,4 @@
-package fallProject;
+package finalProject;
 
 public class Cell {
 	// #9 Class design instance variables

@@ -1,6 +1,6 @@
-package fallProject;
+package finalProject;
 
-import fallProject.DNA.DNAType;
+import finalProject.DNA.DNAType;
 
 public class DNAPair {
 	private DNAType first;
