@@ -6,6 +6,7 @@ public class OrganismDriver {
 		Organism something = new Organism("Something", 0.0, "The Universe", "Animal");
 		Organism somethingElse = new Organism("Something Else", 1, "The Universe", "Plant");
 		System.out.println(something);
+		// #20 Calls method from another class
 		something.die();
 		something.consume("The universe");
 		System.out.println(something);

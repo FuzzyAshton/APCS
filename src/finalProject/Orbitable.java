@@ -1,6 +1,6 @@
 package finalProject;
 
 public interface Orbitable {
-	public int rotate();
-	public int orbit();
+	public int hoursToRotate();
+	public int daysToOrbit();
 }

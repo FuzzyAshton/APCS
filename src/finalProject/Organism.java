@@ -103,6 +103,7 @@ public class Organism implements Comparable<Organism> {
 		if (isAlive) {
 			return name + " organism is " + age + " years old and lives in " + habitat + "\nCell information: "
 					+ getCell().toString();
+					// #20 Calls method from another class
 		}
 		return name + " organism was " + age + " years old and lived in " + habitat + " before it died";
 	}

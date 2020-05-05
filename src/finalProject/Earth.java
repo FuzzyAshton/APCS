@@ -5,10 +5,12 @@ import java.util.Collections;
 
 import finalProject.DNA.DNAType;
 
-public class Earth {
+// #21 Is-a relationship with student designed classes
+public class Earth extends Planet {
 	private ArrayList<Organism> organisms;
 	private Organism aaron;
-	public Earth() {
+	public Earth(int radius, int distanceToSun) {
+		super(radius, distanceToSun);
 		organisms = new ArrayList<Organism>();
 		aaron = new Organism("Aaron", 16.5, "Burlingame", "Plant");
 		organisms.add(aaron);
@@ -21,8 +23,20 @@ public class Earth {
 		Collections.sort(organisms);
 	}
 
-	public Earth(ArrayList<Organism> organisms) {
+	public Earth(ArrayList<Organism> organisms, int radius, int distanceToSun) {
+		super(radius, distanceToSun);
 		this.organisms = organisms;
+	}
+
+	public void thanosSnapOutput() {
+		System.out.println("Earth: \n" + this);
+		System.out.println("There are " + getThymineBases() + " thymine nitrogen bases throughout the world's DNA");
+		int old = getOldestIndex();
+		System.out
+				.println("The oldest organism is at index: " + old + "\nIts age is " + getOrganism(old).getAge());
+		System.out.println("Thanos snapped " + thanosSnap() + " organisms");
+		System.out.println("New earth:\n" + this);
+		System.out.println("Did Thanos kill aaron: " + isAaron());
 	}
 
 	/**
@@ -58,6 +72,7 @@ public class Earth {
 		// #14 Find maximum value from an ArrayList
 		// Skips an unnecessary iteration, starts from 1 instead of 0
 		for (int i = 1; i < organisms.size(); i++) {
+			// #20 Calls method from another class
 			double tempAge = organisms.get(i).getAge();
 			if (tempAge > oldestAge) {
 				oldestAge = tempAge;

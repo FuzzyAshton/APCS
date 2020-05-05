@@ -52,6 +52,7 @@ public class Cell {
 	}
 
 	public String toString() {
+		// #20 Calls method from another class
 		return type + " cell DNA:" + dna.toString();
 	}
 }
