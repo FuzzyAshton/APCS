@@ -9,8 +9,8 @@ import finalProject.DNA.DNAType;
 public class Earth extends Planet {
 	private ArrayList<Organism> organisms;
 	private Organism aaron;
-	public Earth(int radius, int distanceToSun) {
-		super(radius, distanceToSun);
+	public Earth() {
+		super(Constants.EARTH_RADIUS, Constants.EARTH_DISTANCE_FROM_SUN, "Earth");
 		organisms = new ArrayList<Organism>();
 		aaron = new Organism("Aaron", 16.5, "Burlingame", "Plant");
 		organisms.add(aaron);
@@ -23,8 +23,8 @@ public class Earth extends Planet {
 		Collections.sort(organisms);
 	}
 
-	public Earth(ArrayList<Organism> organisms, int radius, int distanceToSun) {
-		super(radius, distanceToSun);
+	public Earth(ArrayList<Organism> organisms) {
+		super(Constants.EARTH_RADIUS, Constants.EARTH_DISTANCE_FROM_SUN, "Earth");
 		this.organisms = organisms;
 	}
 
@@ -113,6 +113,6 @@ public class Earth extends Planet {
 			formattedString = formattedString.substring(0, 1).toUpperCase() + formattedString.substring(1, formattedString.length()).toLowerCase();
 			output += formattedString + "\n";
 		}
-		return output;
+		return super.toString() + output;
 	}
 }

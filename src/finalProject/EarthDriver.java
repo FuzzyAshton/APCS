@@ -20,10 +20,10 @@ public class EarthDriver {
 			organisms.add(e);
 		}
 		// Use of zero arg
-		Earth earth = new Earth(Constants.EARTH_RADIUS, Constants.EARTH_DISTANCE_FROM_SUN);
+		Earth earth = new Earth();
 		// #20 Calls method from another class
 		earth.thanosSnapOutput();
-		Earth terra = new Earth(organisms, Constants.EARTH_RADIUS, Constants.EARTH_DISTANCE_FROM_SUN);
+		Earth terra = new Earth(organisms);
 		System.out.println("\n\n\n\n\n\n\n" + "Earth with " + length + " organisms: \n");
 		terra.thanosSnapOutput();
 	}

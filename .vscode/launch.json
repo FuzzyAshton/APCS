@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "CodeLens (Launch) - PlanetDriver",
+			"request": "launch",
+			"mainClass": "finalProject.PlanetDriver",
+			"projectName": "APCS_77521d38"
+		},
+		{
+			"type": "java",
 			"name": "CodeLens (Launch) - EarthDriver",
 			"request": "launch",
 			"mainClass": "finalProject.EarthDriver",
