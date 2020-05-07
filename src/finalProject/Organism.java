@@ -1,9 +1,9 @@
-package fallProject;
+package finalProject;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Organism {
+public class Organism implements Comparable<Organism> {
 	// #9 Instance variables
 	// #13 ArrayList creation
 	private ArrayList<Cell> cells;
@@ -103,6 +103,7 @@ public class Organism {
 		if (isAlive) {
 			return name + " organism is " + age + " years old and lives in " + habitat + "\nCell information: "
 					+ getCell().toString();
+					// #20 Calls method from another class
 		}
 		return name + " organism was " + age + " years old and lived in " + habitat + " before it died";
 	}
@@ -134,5 +135,9 @@ public class Organism {
 
 	public DNA getCellDNA() {
 		return getCell().getDNA();
+	}
+
+	public int compareTo(Organism other) {
+		return name.compareTo(other.getName());
 	}
 }
