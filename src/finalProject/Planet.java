@@ -35,11 +35,17 @@ public class Planet implements Orbitable, Comparable<Planet> {
 		return (int) (distanceFromSun * Constants.KM_TO_ORBIT_DAYS);
 	}
 
+	public String getName() {
+		return name;
+	}
+
 	public String toString() {
 		return name + " has a radius of " + radius + " kilometers and a distance to the sun of " + distanceFromSun + " million kilometers.\n";
 	}
 
-	@Override
+	/**
+	 * Order planets by their distance from the sun
+	 */
 	public int compareTo(Planet other) {
 		int daysToOrbit = daysToOrbit();
 		int otherDaysToOrbit = other.daysToOrbit();
